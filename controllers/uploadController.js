@@ -10,7 +10,7 @@ class uploadController {
         upload_preset: process.env.FILE_NAME_CLOUDINARY,
       });
 
-      return res.json({ success: true, image: response });
+      return res.json({ success: true, content_url: response.url, mime_type: 'image/jpeg', name: response.public_id });
     } catch (error) {
       console.log(error);
       res.json({ success: false, message: 'Internal Server Error' });
@@ -18,4 +18,4 @@ class uploadController {
   }
 }
 
-module.exports=new uploadController();
+module.exports = new uploadController();

@@ -1,0 +1,19 @@
+{
+  "name": "upload-image",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon --inspect index.js"
+  },
+  "dependencies": {
+    "cloudinary": "^1.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

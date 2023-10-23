@@ -1,4 +1,14 @@
-<!-- install lib -->
+# Upload file in cloudinary
+
+
+## Development
+1. install library
+```cmd
 yarn
-<!-- start project  -->
+```
+
+2. Run app
+```cmd
 yarn dev
+```
+## Add api key from cloudinary
